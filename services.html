@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Легкое обучение CSS, JS, HTML</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link href="primer_css/primer.css" rel="stylesheet" />
+    <style>
+      .text-justify {
+        text-align: justify;
+      }
+      .text-indent-0 {
+        text-indent: 0 !important;
+      }
+      .text-indent-1 {
+        text-indent: var(--base-size-4, 4px) !important;
+      }
+      .text-indent-2 {
+        text-indent: var(--base-size-8, 8px) !important;
+      }
+      .text-indent-3 {
+        text-indent: var(--base-size-16, 16px) !important;
+      }
+      .text-indent-4 {
+        text-indent: var(--base-size-24, 24px) !important;
+      }
+      .text-indent-5 {
+        text-indent: var(--base-size-32, 32px) !important;
+      }
+      .text-indent-6 {
+        text-indent: var(--base-size-40, 40px) !important;
+      }
+      .text-indent-7 {
+        text-indent: var(--base-size-48, 48px) !important;
+      }
+      .text-indent-8 {
+        text-indent: var(--base-size-64, 64px) !important;
+      }
+      .text-indent-9 {
+        text-indent: var(--base-size-80, 80px) !important;
+      }
+      .text-indent-10 {
+        text-indent: var(--base-size-96, 96px) !important;
+      }
+      .text-indent-11 {
+        text-indent: var(--base-size-112, 112px) !important;
+      }
+      .text-indent-12 {
+        text-indent: var(--base-size-128, 128px) !important;
+      }
+      .list-style-position-inside {
+        list-style-position: inside;
+      }
+      .custom-card {
+        transition: transform 0.3s, box-shadow 0.3s;
+        max-width: 400px;
+      }
+      .custom-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <head>
+      <section class="Header">
+        <span class="Header-item">
+          <img src="img/logo.webp" alt="" />
+        </span>
+        <span class="Header-item flex-1 m-0">
+          <h1 class="h2">Играй и учись!</h1>
+        </span>
+        <span class="Header-item hide-sm mr-0">
+          <input
+            type="search"
+            name="name"
+            class="form-control Header-input"
+            value=""
+            placeholder="🔍 Поиск по сайту"
+            aria-label="Search site"
+          />
+        </span>
+      </section>
+      <nav class="UnderlineNav">
+        <div class="UnderlineNav-body">
+          <a class="UnderlineNav-item" href="index.html">Главная</a>
+          <a class="UnderlineNav-item" href="services.html" aria-current="page"
+            >Сервисы</a
+          >
+          <a class="UnderlineNav-item" href="about.html">О проекте</a>
+        </div>
+      </nav>
+    </head>
+    <main class="d-flex flex-column flex-md-row my-2">
+      <article
+        class="p-responsive py-3 mx-2 mr-md-0 mb-md-7 col-md-8 border rounded color-shadow-large"
+      >
+        <h2>Обзор сервисов</h2>
+        <section
+          class="d-flex flex-wrap flex-justify-around flex-content-start flex-items-stretch"
+        >
+          <section
+            class="Box flex-1 color-bg-default color-shadow-large m-2 p-4 rounded-2 custom-card"
+          >
+            <div
+              class="d-flex flex-wrap flex-items-center flex-justify-around m-3"
+            >
+              <div
+                class="flex-self-start color-bg-success color-fg-success p-2 rounded-2 m-1"
+              >
+                Начинающим!
+              </div>
+              <div>
+                <h3 class="h2 mb-1">CodeCombat</h3>
+              </div>
+              <div>
+                <img
+                  class="mx-2 mt-3 mb-2"
+                  src="img/codecombat_logo.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <p class="color-fg-muted mb-0 text-justify">
+              Чему учит: JavaScript, Python. Формат: RPG-стратегия, где код
+              управляет героем. Как это работает: Вы пишете реальный код, чтобы
+              персонаж двигался, атаковал врагов и находил сокровища. Уровни
+              усложняются: от простых команд до функций и алгоритмов.
+            </p>
+            <hr class="my-3" />
+            <div class="BtnGroup d-flex flex-justify-center mb-2 width-full">
+              <a
+                href="codecombat.html"
+                class="BtnGroup-item btn btn-sm btn-outline mt-2"
+                >Инфо →</a
+              >
+              <a
+                href="https://codecombat.com/home"
+                class="BtnGroup-item btn btn-sm btn-outline mt-2"
+                >Играть →</a
+              >
+            </div>
+          </section>
+          <section
+            class="Box flex-1 color-bg-default color-shadow-large m-2 p-4 rounded-2 custom-card"
+          >
+            <div
+              class="d-flex flex-wrap flex-items-center flex-justify-around m-3"
+            >
+              <div
+                class="flex-self-start color-bg-success color-fg-success p-2 rounded-2 m-1"
+              >
+                Начинающим!
+              </div>
+              <div>
+                <h3 class="h2 mb-1">CSS Diner</h3>
+              </div>
+              <div>
+                <img
+                  class="mx-2 mt-3 mb-2"
+                  src="img/css_diner_logo.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <p class="color-fg-muted mb-0 text-justify">
+              Чему учит: CSS-селекторы. Формат: Интерактивный симулятор
+              ресторана. Как это работает: "Подавайте" блюда (HTML-элементы),
+              выбирая правильные селекторы (классы, псевдоклассы, атрибуты).
+            </p>
+            <hr class="my-3" />
+            <div class="BtnGroup d-flex flex-justify-center mb-2 width-full">
+              <a
+                href="css_diner.html"
+                class="BtnGroup-item btn btn-sm btn-outline mt-2"
+                >Инфо →</a
+              >
+              <a
+                href="https://flukeout.github.io/"
+                class="BtnGroup-item btn btn-sm btn-outline mt-2"
+                >Играть →</a
+              >
+            </div>
+          </section>
+          <section
+            class="Box flex-1 color-bg-default color-shadow-large m-2 p-4 rounded-2 custom-card"
+          >
+            <div
+              class="d-flex flex-wrap flex-items-center flex-justify-around m-3"
+            >
+              <div
+                class="flex-self-start color-bg-success color-fg-success p-2 rounded-2 m-1"
+              >
+                Начинающим!
+              </div>
+              <div>
+                <h3 class="h2 mb-1">Flexbox Froggy</h3>
+              </div>
+              <div>
+                <img
+                  class="mx-2 mt-3 mb-2"
+                  src="img/flexboxfroggy_logo.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <p class="color-fg-muted mb-0 text-justify">
+              Чему учит: CSS Flexbox. Формат: Мини-игры с анимированными
+              персонажами. Как это работает: Flexbox Froggy: Помогите лягушкам
+              занять правильные позиции на листьях, используя свойства
+              flex-direction, justify-content и т.д.
+            </p>
+            <hr class="my-3" />
+            <div class="BtnGroup d-flex flex-justify-center mb-2 width-full">
+              <a
+                href="flexboxfroggy.html"
+                class="BtnGroup-item btn btn-sm btn-outline mt-2"
+                >Инфо →</a
+              >
+              <a
+                href="https://flexboxfroggy.com/#ru"
+                class="BtnGroup-item btn btn-sm btn-outline mt-2"
+                >Играть →</a
+              >
+            </div>
+          </section>
+          <section
+            class="Box flex-1 color-bg-default color-shadow-large m-2 p-4 rounded-2 custom-card"
+          >
+            <div
+              class="d-flex flex-wrap flex-items-center flex-justify-around m-3"
+            >
+              <div
+                class="flex-self-start color-bg-success color-fg-success p-2 rounded-2 m-1"
+              >
+                Начинающим!
+              </div>
+              <div>
+                <h3 class="h2 mb-1">Grid Garden</h3>
+              </div>
+              <div>
+                <img
+                  class="mx-2 mt-3 mb-2"
+                  src="img/cssgridgarden_logo.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <p class="color-fg-muted mb-0 text-justify">
+              Чему учит: CSS Grid. Формат: Мини-игры с анимированными
+              персонажами. Как это работает: Grid Garden: Вырастите морковку,
+              управляя CSS Grid-контейнерами.
+            </p>
+            <hr class="my-3" />
+            <div class="BtnGroup d-flex flex-justify-center mb-2 width-full">
+              <a
+                href="cssgridgarden.html"
+                class="BtnGroup-item btn btn-sm btn-outline mt-2"
+                >Инфо →</a
+              >
+              <a
+                href="https://cssgridgarden.com/"
+                class="BtnGroup-item btn btn-sm btn-outline mt-2"
+                >Играть →</a
+              >
+            </div>
+          </section>
+          <section
+            class="Box flex-1 color-bg-default color-shadow-large m-2 p-4 rounded-2 custom-card"
+          >
+            <div
+              class="d-flex flex-wrap flex-items-center flex-justify-around m-3"
+            >
+              <div
+                class="flex-self-start color-bg-sponsors color-fg-sponsors p-2 rounded-2 m-1"
+              >
+                Любителям!
+              </div>
+              <div>
+                <h3 class="h2 mb-1">Screeps</h3>
+              </div>
+              <div>
+                <img
+                  class="mx-2 mt-3 mb-2"
+                  src="img/screeps_logo.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <p class="color-fg-muted mb-0 text-justify">
+              Чему учит: JavaScript, Python. Формат: RPG-стратегия, где код
+              управляет героем. Как это работает: Вы пишете реальный код, чтобы
+              персонаж двигался, атаковал врагов и находил сокровища. Уровни
+              усложняются: от простых команд до функций и алгоритмов.
+            </p>
+            <hr class="my-3" />
+            <div class="BtnGroup d-flex flex-justify-center mb-2 width-full">
+              <a
+                href="screeps.html"
+                class="BtnGroup-item btn btn-sm btn-outline mt-2"
+                >Инфо →</a
+              >
+              <a
+                href="https://screeps.com/"
+                class="BtnGroup-item btn btn-sm btn-outline mt-2"
+                >Играть →</a
+              >
+            </div>
+          </section>
+          <section
+            class="Box flex-1 color-bg-default color-shadow-large m-2 p-4 rounded-2 custom-card"
+          >
+            <div
+              class="d-flex flex-wrap flex-items-center flex-justify-around m-3"
+            >
+              <div
+                class="flex-self-start color-bg-attention color-fg-attention p-2 rounded-2 m-1"
+              >
+                Продвинутым!
+              </div>
+              <div>
+                <h3 class="h2 mb-1">Code Wars</h3>
+              </div>
+              <div>
+                <img
+                  class="mx-2 mt-3 mb-2"
+                  src="img/codewars_logo.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <p class="color-fg-muted mb-0 text-justify">
+              Чему учит: JavaScript, Python, Ruby и другие языки. Формат: Боевые
+              задания с элементами RPG. Как это работает: Решайте задачи
+              ("ката"), чтобы повышать ранг и открывать новые испытания. Пишите
+              код, который проходит тесты, и сравнивайте решения с другими.
+            </p>
+            <hr class="my-3" />
+            <div class="BtnGroup d-flex flex-justify-center mb-2 width-full">
+              <a
+                href="codewars.html"
+                class="BtnGroup-item btn btn-sm btn-outline mt-2"
+                >Инфо →</a
+              >
+              <a
+                href="https://www.codewars.com/dashboard"
+                class="BtnGroup-item btn btn-sm btn-outline mt-2"
+                >Играть →</a
+              >
+            </div>
+          </section>
+        </section>
+      </article>
+      <aside class="flex-1 d-flex flex-column mt-2 mt-md-0 mb-9 mb-sm-7">
+        <section class="Box mb-2 mx-2 color-shadow-large">
+          <h4 class="Box-header Box-title p-responsive color-fg-success">
+            ↑ На 14% выше вовлеченность
+          </h4>
+          <p class="Box-body text-justify p-responsive color-shadow-large">
+            Исследование Университета Колорадо (2014) показало, что геймификация
+            повышает вовлеченность учеников на 14% по сравнению с традиционными
+            методами. Участники чаще возвращались к заданиям и тратили больше
+            времени на обучение.
+          </p>
+        </section>
+        <section class="Box mb-2 mx-2 color-shadow-large">
+          <h4 class="Box-header Box-title p-responsive color-fg-success">
+            ↓ На 50% меньше стресса
+          </h4>
+          <p class="Box-body text-justify p-responsive color-shadow-large">
+            Эксперимент Университета Тренто (Италия, 2019) выявил, что игровые
+            форматы снижают уровень кортизола («гормона стресса») у новичков,
+            изучающих программирование, делая процесс менее пугающим.
+          </p>
+        </section>
+        <section class="Box mb-2 mx-2 color-shadow-large">
+          <h4 class="Box-header Box-title p-responsive color-fg-success">
+            ↑ На 35% выше мотивация
+          </h4>
+          <p class="Box-body text-justify p-responsive color-shadow-large">
+            Метаанализ 50+ исследований (2021, Computers & Education)
+            подтвердил: геймификация усиливает внутреннюю мотивацию (интерес,
+            азарт) и уменьшает страх перед ошибками, особенно в
+            STEM-дисциплинах.
+          </p>
+        </section>
+        <section class="Box mb-2 mx-2 color-shadow-large">
+          <h4 class="Box-header Box-title p-responsive color-fg-success">
+            ↑ Улучшение долгосрочного запоминания
+          </h4>
+          <p class="Box-body text-justify p-responsive color-shadow-large">
+            По данным Journal of Educational Psychology (2020), игровые механики
+            (бейджи, уровни, обратная связь) увеличивают удержание информации на
+            20–30%, так как активируют эмоциональную память и систему
+            вознаграждения мозга.
+          </p>
+        </section>
+        <section class="Box mb-2 mx-2 color-shadow-large">
+          <h4 class="Box-header Box-title p-responsive color-fg-success">
+            Практика > Теория
+          </h4>
+          <p class="Box-body text-justify p-responsive color-shadow-large">
+            Согласно MIT (2017), обучение через игровые симуляторы (например,
+            написание кода для персонажа) на 40% эффективнее лекций, так как
+            мозг лучше усваивает информацию через действие и мгновенную обратную
+            связь.
+          </p>
+        </section>
+      </aside>
+    </main>
+    <footer
+      class="position-fixed bottom-0 color-bg-subtle border-top rounded-top-3 width-full"
+    >
+      <section class="subnav d-flex flex-justify-center m-2">
+        <div class="subnav-search m-0 d-sm-none">
+          <input
+            type="search"
+            name="name"
+            class="form-control subnav-search-input"
+            value=""
+            placeholder="Поиск по сайту"
+            aria-label="Search site"
+          />
+          <svg
+            class="subnav-search-icon octicon"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"
+            />
+          </svg>
+        </div>
+      </section>
+      <p class="f6 text-center text-gray">
+        Технологии интернет. СЛИ | Сыктывкар - 2025
+      </p>
+    </footer>
+  </body>
+</html>

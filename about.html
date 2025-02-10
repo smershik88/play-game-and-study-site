@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Легкое обучение CSS, JS, HTML</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link href="primer_css/primer.css" rel="stylesheet" />
+    <style>
+      .text-justify {
+        text-align: justify;
+      }
+      .text-indent-0 {
+        text-indent: 0 !important;
+      }
+      .text-indent-1 {
+        text-indent: var(--base-size-4, 4px) !important;
+      }
+      .text-indent-2 {
+        text-indent: var(--base-size-8, 8px) !important;
+      }
+      .text-indent-3 {
+        text-indent: var(--base-size-16, 16px) !important;
+      }
+      .text-indent-4 {
+        text-indent: var(--base-size-24, 24px) !important;
+      }
+      .text-indent-5 {
+        text-indent: var(--base-size-32, 32px) !important;
+      }
+      .text-indent-6 {
+        text-indent: var(--base-size-40, 40px) !important;
+      }
+      .text-indent-7 {
+        text-indent: var(--base-size-48, 48px) !important;
+      }
+      .text-indent-8 {
+        text-indent: var(--base-size-64, 64px) !important;
+      }
+      .text-indent-9 {
+        text-indent: var(--base-size-80, 80px) !important;
+      }
+      .text-indent-10 {
+        text-indent: var(--base-size-96, 96px) !important;
+      }
+      .text-indent-11 {
+        text-indent: var(--base-size-112, 112px) !important;
+      }
+      .text-indent-12 {
+        text-indent: var(--base-size-128, 128px) !important;
+      }
+      .list-style-position-inside {
+        list-style-position: inside;
+      }
+    </style>
+  </head>
+  <body>
+    <head>
+      <section class="Header">
+        <span class="Header-item">
+          <img src="img/logo.webp" alt="" />
+        </span>
+        <span class="Header-item flex-1 m-0">
+          <h1 class="h2">Играй и учись!</h1>
+        </span>
+        <span class="Header-item hide-sm mr-0">
+          <input
+            type="search"
+            name="name"
+            class="form-control Header-input"
+            value=""
+            placeholder="🔍 Поиск по сайту"
+            aria-label="Search site"
+          />
+        </span>
+      </section>
+      <nav class="UnderlineNav">
+        <div class="UnderlineNav-body">
+          <a class="UnderlineNav-item" href="index.html">Главная</a>
+          <a class="UnderlineNav-item" href="services.html">Сервисы</a>
+          <a class="UnderlineNav-item" href="about.html" aria-current="page"
+            >О проекте</a
+          >
+        </div>
+      </nav>
+    </head>
+    <main class="d-flex flex-column flex-md-row my-2">
+      <article
+        class="p-responsive py-3 mx-2 mr-md-0 mb-md-7 col-md-8 border rounded color-shadow-large"
+      >
+        <h2>О проекте</h2>
+        <img
+          src="img/about_sli_logo.webp"
+          alt=""
+          class="float-left mr-3 mt-1 mb-0"
+        />
+        <p class="text-justify text-indent-4">
+          Данный проект был разработан в рамках изучения дисциплины «Технологии
+          интернет» и посвящен актуальной теме — обучению веб-разработке через
+          игровые форматы. Цель работы — создать адаптивный веб-ресурс, который
+          знакомит пользователей с популярными сервисами для изучения HTML, CSS
+          и JavaScript в интерактивной форме.
+        </p>
+        <p class="text-justify text-indent-4">
+          Проект позволил углубить навыки работы с современными
+          веб-технологиями, освоить принципы адаптивного дизайна и научиться
+          структурировать образовательный контент. Использование CSS-фреймворка
+          Primer ускорило разработку и помогло создать чистый и простой
+          интерфейс.
+        </p>
+        <p class="text-justify text-indent-4">Технологии и реализация</p>
+        <ul class="list-style-position-inside text-indent-4">
+          <li>
+            HTML-верстка: Семантическая разметка с использованием тегов
+            &lt;section&gt;, &lt;article&gt;, &lt;nav&gt;, что обеспечило
+            логичную структуру контента и улучшило SEO-оптимизацию.
+          </li>
+          <li>
+            CSS-фреймворк Primer: Выбран для стилизации из-за его
+            минималистичного дизайна, удобной системы сеток и готовых
+            компонентов (кнопки, карточки, навигация).
+          </li>
+          <li>
+            Адаптивное поведение: Реализовано через медиа-запросы и гибкие
+            единицы измерения (rem, %). Сайт корректно отображается на
+            устройствах с разным разрешением (ПК, планшеты, смартфоны).
+          </li>
+          <li>
+            Интерактивность: Простые CSS-анимации для кнопок и карточек, чтобы
+            сделать интерфейс динамичным.
+          </li>
+        </ul>
+      </article>
+      <aside class="flex-1 d-flex flex-column mt-2 mt-md-0 mb-9 mb-sm-7">
+        <section class="Box mb-2 mx-2 color-shadow-large">
+          <h4 class="Box-header Box-title p-responsive color-fg-success">
+            ↑ На 14% выше вовлеченность
+          </h4>
+          <p class="Box-body text-justify p-responsive color-shadow-large">
+            Исследование Университета Колорадо (2014) показало, что геймификация
+            повышает вовлеченность учеников на 14% по сравнению с традиционными
+            методами. Участники чаще возвращались к заданиям и тратили больше
+            времени на обучение.
+          </p>
+        </section>
+        <section class="Box mb-2 mx-2 color-shadow-large">
+          <h4 class="Box-header Box-title p-responsive color-fg-success">
+            ↓ На 50% меньше стресса
+          </h4>
+          <p class="Box-body text-justify p-responsive color-shadow-large">
+            Эксперимент Университета Тренто (Италия, 2019) выявил, что игровые
+            форматы снижают уровень кортизола («гормона стресса») у новичков,
+            изучающих программирование, делая процесс менее пугающим.
+          </p>
+        </section>
+        <section class="Box mb-2 mx-2 color-shadow-large">
+          <h4 class="Box-header Box-title p-responsive color-fg-success">
+            ↑ На 35% выше мотивация
+          </h4>
+          <p class="Box-body text-justify p-responsive color-shadow-large">
+            Метаанализ 50+ исследований (2021, Computers & Education)
+            подтвердил: геймификация усиливает внутреннюю мотивацию (интерес,
+            азарт) и уменьшает страх перед ошибками, особенно в
+            STEM-дисциплинах.
+          </p>
+        </section>
+        <section class="Box mb-2 mx-2 color-shadow-large">
+          <h4 class="Box-header Box-title p-responsive color-fg-success">
+            ↑ Улучшение долгосрочного запоминания
+          </h4>
+          <p class="Box-body text-justify p-responsive color-shadow-large">
+            По данным Journal of Educational Psychology (2020), игровые механики
+            (бейджи, уровни, обратная связь) увеличивают удержание информации на
+            20–30%, так как активируют эмоциональную память и систему
+            вознаграждения мозга.
+          </p>
+        </section>
+        <section class="Box mb-2 mx-2 color-shadow-large">
+          <h4 class="Box-header Box-title p-responsive color-fg-success">
+            Практика > Теория
+          </h4>
+          <p class="Box-body text-justify p-responsive color-shadow-large">
+            Согласно MIT (2017), обучение через игровые симуляторы (например,
+            написание кода для персонажа) на 40% эффективнее лекций, так как
+            мозг лучше усваивает информацию через действие и мгновенную обратную
+            связь.
+          </p>
+        </section>
+      </aside>
+    </main>
+    <footer
+      class="position-fixed bottom-0 color-bg-subtle border-top rounded-top-3 width-full"
+    >
+      <section class="subnav d-flex flex-justify-center m-2">
+        <div class="subnav-search m-0 d-sm-none">
+          <input
+            type="search"
+            name="name"
+            class="form-control subnav-search-input"
+            value=""
+            placeholder="Поиск по сайту"
+            aria-label="Search site"
+          />
+          <svg
+            class="subnav-search-icon octicon"
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            aria-hidden="true"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M15.7 13.3l-3.81-3.83A5.93 5.93 0 0 0 13 6c0-3.31-2.69-6-6-6S1 2.69 1 6s2.69 6 6 6c1.3 0 2.48-.41 3.47-1.11l3.83 3.81c.19.2.45.3.7.3.25 0 .52-.09.7-.3a.996.996 0 0 0 0-1.41v.01zM7 10.7c-2.59 0-4.7-2.11-4.7-4.7 0-2.59 2.11-4.7 4.7-4.7 2.59 0 4.7 2.11 4.7 4.7 0 2.59-2.11 4.7-4.7 4.7z"
+            />
+          </svg>
+        </div>
+      </section>
+      <p class="f6 text-center text-gray">
+        Технологии интернет. СЛИ | Сыктывкар - 2025
+      </p>
+    </footer>
+  </body>
+</html>
